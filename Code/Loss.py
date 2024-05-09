@@ -144,7 +144,7 @@ def Coll_Loss(
 
         # Check if we can compute D_j from any of the derivatives of U that
         # we've already computed.
-        for i in range(j, 0):
+        for i in reversed(range(0, j)):
             # Get the ith derivative.
             D_i : Derivative = Derivatives[i];
 
